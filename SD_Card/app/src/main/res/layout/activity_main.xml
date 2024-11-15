@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reading and Writing to External Storage"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/myInputText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:lines="5"
+        android:minLines="3"
+        android:gravity="top|left"
+        android:inputType="textMultiLine">
+        <requestFocus/>
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/saveExternalStorage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/getExternalStorage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="READ"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom|center"
+        android:text="Umang"
+        android:textSize="25sp" />
+
+
+</LinearLayout>
